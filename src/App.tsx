@@ -1,18 +1,18 @@
 function CardSkeleton() {
-  return <div className="flex flex-col animate-pulse">
-    <div className="bg-slate-200 rounded w-48 h-32"/>
-    <div className="flex flex-row my-2 gap-2 items-center">
-      <div className="w-10 h-10 rounded-full bg-slate-200"/>
+  return <div className="flex flex-col bg-slate-100 py-3 px-2 rounded gap-1 animate-pulse">
+    <div className="bg-slate-200 rounded w-32 h-20"/>
+    <div className="flex flex-row gap-1 items-center">
+      <div className="bg-slate-200 rounded-full w-8 h-8"/>
       <div className="flex flex-col gap-1">
-        <div className="w-20 h-3 rounded-sm bg-slate-200"/>
-        <div className="w-32 h-2 rounded-sm bg-slate-200"/>
+        <div className="bg-slate-200 rounded w-16 h-3"/>
+        <div className="bg-slate-200 rounded w-20 h-2"/>
       </div>
     </div>
   </div>;
 }
 
 function App() {
-  return <div className="max-w-lg m-auto my-10 flex gap-4 justify-center">
+  return <div className="max-w-md m-auto my-10 flex gap-2">
     <CardSkeleton/>
     <CardSkeleton/>
     <CardSkeleton/>
